@@ -1,0 +1,169 @@
+// 根据ui稿调整的全局样式
+.common-button {
+    height: 112rpx;
+    color: #fff;
+    background: linear-gradient(360deg, #4D4D4D 0%, #303030 100%);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36rpx;
+
+    &.revert {
+    height: 108rpx;
+    background: #fff;
+        color: #333333;
+        border: 2rpx solid #333333;
+    }
+
+    &:not(:first-child) {
+        margin: 32rpx 0 0;
+    }
+}
+
+.flex-both-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mask {
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.22);
+}
+
+.with-navigator {
+    padding: 80rpx 0 0 0;
+}
+
+
+
+.bold {
+    font-weight: bold;
+}
+
+.ellipsis{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    // #ifndef APP-PLUS
+    lines:1;
+    // #endif
+    white-space:nowrap;
+}
+
+
+.upload-panel, .gender-panel {
+        background: #f0f0f0;
+        display: flex;
+        flex-direction: column;
+        border-radius: 40rpx;
+    
+        &__title {
+            color: #272525;
+            font-size: 36rpx;
+            font-weight: bold;
+            border-radius: 40rpx 40rpx 0 0;
+        }
+    
+        text {
+          background: #F9F9F9;
+          padding: 56rpx 48rpx;
+          color: #333;
+          display: block;
+        }
+    
+        &__border {
+          border-bottom: 2rpx solid #f0f0f0;
+        }
+    
+        &__cancel {
+            margin-top: 20rpx;
+            color: #838181;
+        }
+}
+
+// 选择week的弹窗
+.week-panel {
+    background: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    border-radius: 40rpx;
+
+    &__title {
+        color: #272525;
+        font-size: 36rpx;
+        font-weight: bold;
+        border-radius: 40rpx 40rpx 0 0;
+    }
+
+    text {
+      background: #F9F9F9;
+      padding: 56rpx 48rpx;
+      color: #333;
+      display: block;
+    }
+
+    &__confirm {
+        margin-top: 20rpx;
+        color: #838181;
+    }
+}
+
+.common-textarea {
+    border-radius: 16rpx;
+    padding: 32rpx;
+    background: #F7F7F7;
+    width: 100%;
+}
+
+.classification {
+    padding: 10rpx 20rpx;
+    margin-top: 20rpx;
+    background: #EEEEEE;
+    border-radius: 28rpx;
+    color: #838181;
+    font-size: 24rpx;
+    margin-right: 20rpx;
+    display: flex;
+    align-items: center;
+    image {
+        width: 24rpx;
+        height: 24rpx;
+        margin-right: 10rpx;
+    }
+
+    &.active {
+        background: #3D3D3D;
+        color: #fff;
+    }
+}
+
+.follow-button {
+    image {
+        width: 24rpx;
+        height: 24rpx;
+    }
+
+    color: #3D3D3D;
+    border: 2rpx solid #3D3D3D;
+    border-radius: 28rpx;
+    padding: 8rpx 20rpx;
+    background: #fff;
+
+    &.unfollowed {
+        background: #3D3D3D;
+        color: #fff;
+        display: flex;
+        align-items: center;
+
+        image {
+            margin-right: 4rpx;
+            width: 24rpx;
+            height: 24rpx;
+        }
+    }
+}

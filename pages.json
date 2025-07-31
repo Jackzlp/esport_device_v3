@@ -1,0 +1,146 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uni_modules/uview-plus/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/account/communitySwitch",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/account/login",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "components/agreement/index",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "components/customPasswordInput/index",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/account/LoginDetail",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/community/index",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/my/my",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/preMarket/index",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/home/index",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "components/uploadMedia/index",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "components/videoPlay/index",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "components/post/index",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path" : "components/avatar/index",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "components/waterPost/index",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationStyle": "custom",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F7F7F7",
+		// "backgroundColor": "#F7F7F7",
+		"pageOrientation": "portrait",
+		"app-plus": {
+			"titleNView": false,
+			"scrollIndicator": "none",
+			"bounce": "none"
+		}
+	},
+	"tabBar": {
+		"color": "#717171",
+		"selectedColor": "#333333",
+		"borderStyle": "#fff",
+		"iconWidth": "24px",
+		"backgroundColor": "#fff",
+		"display": "block",
+		"list": [{
+				"pagePath": "pages/home/index",
+				"iconPath": "static/images/tab/home.png",
+				"selectedIconPath": "static/images/tab/home-active.png",
+				"text": "LYNCK"
+			},
+			{
+				"pagePath": "pages/community/index",
+				"iconPath": "static/images/tab/community.png",
+				"selectedIconPath": "static/images/tab/community-active.png",
+				"text": "Community"
+			},
+			{
+				"pagePath": "pages/preMarket/index",
+				"iconPath": "static/images/tab/market.png",
+				"selectedIconPath": "static/images/tab/market-active.png",
+				"text": "Shop"
+			},
+			{
+				"pagePath": "pages/my/my",
+				"iconPath": "static/images/tab/my.png",
+				"selectedIconPath": "static/images/tab/my-active.png",
+				"text": "Me"
+			}
+		]
+	},
+	"uniIdRouter": {}
+}

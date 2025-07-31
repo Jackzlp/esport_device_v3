@@ -1,0 +1,37 @@
+/* stylelint-disable selector-type-no-unknown */
+
+/* 重置样式表，达到所有浏览器初始样式统一的效果 */
+
+page {
+    box-sizing: border-box;
+  
+    /* #ifdef MP-WEIXIN */
+    min-height: 100vh;
+  
+    /* #endif */
+  
+    /* #ifndef MP-WEIXIN */
+    min-height: 100%;
+  
+    /* #endif */
+  
+    /* 参考自 Ant Design */
+    font-family: '苹方简体', 'San Francisco', -apple-system, BlinkMacSystemFont,
+      'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei',
+      'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Color Emoji',
+      'Segoe UI Emoji', 'Segoe UI Symbol';
+    font-size: 28rpx;
+    color: #272727;
+    background: #fff;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  view {
+    display: block;
+  }
+  
+  image {
+    display: block;
+    width: auto;
+  }
+  

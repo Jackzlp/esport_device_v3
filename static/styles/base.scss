@@ -1,0 +1,169 @@
+/* 基础样式表（或叫原子样式表），用于覆盖或复用样式 */
+
+// 大号的价格并且加上货币 ¥ 符号
+.icon-money {
+    font-size: 60rpx;
+    font-weight: 500;
+    color: #272727;
+
+    &::before {
+        display: contents;
+        font-size: 24rpx;
+        font-weight: 600;
+        content: "¥";
+    }
+}
+
+/* 以下样式完全抄 TailwindCSS（https://www.tailwindcss.cn/docs），只写最最最常用的 */
+.flex-wrap	{flex-wrap: wrap;}
+.flex-wrap-reverse	{flex-wrap: wrap-reverse;}
+.flex-nowrap	{flex-wrap: nowrap;}
+
+.flex {
+    display: flex;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.flex-1	{flex: 1 1 0%;}
+.flex-auto	{flex: 1 1 auto;}
+.flex-initial	{flex: 0 1 auto;}
+.flex-none	{flex: none;}
+
+.justify-start{
+    justify-content: flex-start;
+}	
+
+.justify-end{
+    justify-content: flex-end;
+}	
+
+.justify-center{
+    justify-content: center;
+}	
+
+.justify-between	{
+    justify-content: space-between;
+}
+
+.justify-around{
+    justify-content: space-around;
+}	
+
+.justify-evenly	{
+    justify-content: space-evenly;
+}
+
+.items-start{
+    align-items: flex-start;
+}	
+
+.items-end	{
+    align-items: flex-end;
+}
+
+.items-center	{
+    align-items: center;
+}
+
+.items-baseline	{
+    align-items: baseline;
+}
+
+.items-stretch	{
+    align-items: stretch;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute{
+    position: absolute;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.overflow-auto{overflow: auto;}
+.overflow-hidden{overflow: hidden;}
+.overflow-visible{overflow: visible;}
+.overflow-scroll{overflow: scroll;}
+.overflow-x-auto{overflow-x: auto;}
+.overflow-y-auto{overflow-y: auto;}
+.overflow-x-hidden{overflow-x: hidden;}
+.overflow-y-hidden{overflow-y: hidden;}
+.overflow-x-visible{overflow-x: visible;}
+.overflow-y-visible{overflow-y: visible;}
+.overflow-x-scroll{overflow-x: scroll;}
+.overflow-y-scroll{overflow-y: scroll;}
+
+.text-left	{text-align: left;}
+.text-center	{text-align: center;}
+.text-right	{text-align: right;}
+.text-justify	{text-align: justify;}
+
+.truncat{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.inset-0{
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.top-0{
+    top: 0;
+}
+
+.right-0{
+    right: 0;
+}
+
+.bottom-0{
+    bottom: 0;
+}
+
+.left-0{
+    left: 0;
+}
+
+.min-h-0	{min-height: 0}
+.min-h-full	{min-height: 100%}
+.min-h-screen	{min-height: 100vh}
+
+.font-thin	{font-weight: 100;}
+.font-extralight	{font-weight: 200;}
+.font-light	{font-weight: 300;}
+.font-normal	{font-weight: 400;}
+.font-medium	{font-weight: 500;}
+.font-semibold	{font-weight: 600;}
+.font-bold	{font-weight: 700;}
+.font-extrabold	{font-weight: 800;}
+.font-black	{font-weight: 900;}
+
+.text-xs {
+    font-size: 24rpx;
+    line-height: 34rpx;
+}
+
+.text-sm {
+    font-size: 28rpx;
+    line-height: 40rpx;
+}
+
+.underline	{text-decoration: underline};
+.line-through	{text-decoration: line-through};
+.no-underline	{text-decoration: none};
+
