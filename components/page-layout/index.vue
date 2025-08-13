@@ -218,6 +218,7 @@
 		z-index: 998;
 		position: static;
 		width: 100vw;
+		margin-top: var(--status-bar-height);
 		// overflow: visible;
 		// position: relative;
 

@@ -104,7 +104,6 @@ export const useUserStore = defineStore('user', {
 
 		// 设置用户信息
 		setUserInfo(userInfo) {
-			console.log(userInfo)
 			setStorageSync(USERINFO_KEY, userInfo, 3600 * 24 * 7000)
 			setStorageSync(TOKEN_KEY, userInfo.token, 3600 * 24 * 7000)
 			// console.log(getStorageSync(USERINFO_KEY))

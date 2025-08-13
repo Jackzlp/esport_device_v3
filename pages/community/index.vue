@@ -674,7 +674,6 @@
 				}, 200)
 
 				uni.pageScrollTo(0);
-				console.log("BBBB")
 				// 重新搜索
 				this.getPostList(isHot);
 			},
@@ -703,7 +702,7 @@
 								isMine: el.user_id === this.userInfo.user_id
 							};
 						});
-						console.log(arr)
+
 						if (this.posts.length > 0) {
 							if (arr.length) {
 								if (this.posts[0].id != arr[0].id) {

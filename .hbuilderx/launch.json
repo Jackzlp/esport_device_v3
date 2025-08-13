@@ -4,6 +4,11 @@
         {
             "openVueDevtools" : true,
             "type" : "uni-app:h5"
+        },
+        {
+            "customPlaygroundType" : "local",
+            "playground" : "custom",
+            "type" : "uni-app:app-android"
         }
     ]
 }

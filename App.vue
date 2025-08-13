@@ -37,4 +37,7 @@
 	// @import '@/static/styles/global.scss';
 	// @import '@/uni_modules/uview-plus/index.scss';
 	/*每个页面公共css */
+	page {
+		background-color: #f7f7f7;
+	}
 </style>

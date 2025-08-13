@@ -1,4 +1,4 @@
-import i18n from '@/lang'
+import i18n from '@/locales'
 
 const isAndroid = uni.getSystemInfoSync().platform === 'android';
 

@@ -45,18 +45,18 @@
 			this.getImageCache1()
 		},
 		mounted() {
-
-			if (this.url) {
-				uni.getImageInfo({
-					src: this.url ? this.url : this.fileMd5,
-					success: () => {
-						// console.log('Image loaded successfully');
-					},
-					fail: () => {
-						// console.log('Image failed to load');
-					}
-				})
-			}
+			// console.log(this.fileMd5)
+			// if (this.url) {
+			// 	uni.getImageInfo({
+			// 		src: this.url ? this.url : this.fileMd5,
+			// 		success: () => {
+			// 			// console.log('Image loaded successfully');
+			// 		},
+			// 		fail: () => {
+			// 			// console.log('Image failed to load');
+			// 		}
+			// 	})
+			// }
 
 		},
 		methods: {

@@ -1,6 +1,9 @@
 {
 	"easycom": {
-		"^u-(.*)": "@/uni_modules/uview-plus/components/u-$1/u-$1.vue"
+		"autoscan": true,
+		"custom": {
+			"^u-(.*)": "uview-plus/components/u-$1/u-$1.vue"
+		}
 	},
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
@@ -82,14 +85,47 @@
 			}
 		},
 		{
-			"path" : "components/avatar/index",
-			"style" : 
-			{
-				"navigationBarTitleText" : ""
+			"path": "components/avatar/index",
+			"style": {
+				"navigationBarTitleText": ""
 			}
 		},
 		{
-			"path" : "components/waterPost/index",
+			"path": "pages/device/atmosphereLight/setting"
+		},
+		{
+			"path": "pages/device/atmosphereLight/index"
+		},
+		{
+			"path": "pages/device/atmosphereLight/timer"
+		},
+		{
+			"path": "components/waterPost/index",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/device/atmosphereLight/functions/colorful/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/home/components/deviceList",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/home/detect",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path" : "pages/home/DeviceDetailPage",
 			"style" : 
 			{
 				"navigationBarTitleText" : ""

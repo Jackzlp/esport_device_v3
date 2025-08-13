@@ -4,14 +4,10 @@
 			mode="aspectFill" :style="`border-radius: ${size / 4}rpx`"></image>
 		<image v-if="!isTourist && showDefalut" class="avatar__image" src="../../static/images/defaultIcon.jpg"
 			mode="aspectFill" :style="`border-radius: ${size / 4}rpx`"></image>
-
 		<image v-if="isTourist && showDefalut==false" class="avatar__image" @error="imageError" :src="avatarUrl"
 			mode="aspectFill" :style="`border-radius: ${size / 4}rpx`"></image>
-
 		<image v-if="isTourist && showDefalut" class="avatar__image" src="../../static/images/defaultIcon.jpg"
 			mode="aspectFill" :style="`border-radius: ${size / 4}rpx`"></image>
-
-
 		<image v-if="official" class="avatar__official"
 			:style="`width: ${14 * scale * 2}rpx; height: ${14 * scale * 2}rpx`" src="/static/images/official.png" />
 		<!-- <view v-show="showMessageDot" class="message-dot" /> -->
@@ -87,10 +83,7 @@
 				} else {
 					getImageCache(this.url, this.url)
 					return this.url
-
 				}
-
-				// return this.url || require('@images/default-avatar.png')
 			},
 
 		},

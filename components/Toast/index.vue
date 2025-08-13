@@ -12,7 +12,7 @@
 
 <script>
 	import {
-		mapActions
+		mapState
 	} from 'pinia'
 	import {
 		useCommonStore

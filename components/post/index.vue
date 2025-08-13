@@ -9,10 +9,7 @@
 
 				<text class="post__username ellipsis">{{ item.app_user && item.app_user.nick_name }}</text>
 			</view>
-			<!-- 	<view v-if="showBlock" class="post__likes" @click.stop="handShowAlertTypePopup(item)">
-				<image :src="require(`@images/common/warning-circle@2x.png`)" />
-				<text>{{ $t("post_detail_page.block") }}</text>
-			</view> -->
+
 			<view class="post__likes" @click.stop="handleLikes(item)">
 				<image mode="aspectFit" :src="`/static/images/post/likes${item.am_i_like ? '-active' : ''}.png`" />
 				<text>{{ simplifyNumbers(item.praise_cnt) }}</text>
